@@ -1,0 +1,309 @@
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* justify-content: center; */
+}
+
+#equal {
+    display: none;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navbar {
+    z-index: 2;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: rgba(22, 22, 23, 0.8);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    /* cursor: pointer; */
+    color: #A8A8A8;
+    position: sticky;
+    top: 0;
+}
+
+@media only screen and (max-width: 1040px) {
+    .navbar-items {
+        display: none;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #equal {
+        display: block;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        /* flex-direction: row-reverse; */
+        justify-content: space-between;
+    }
+}
+
+.navbar-items {
+    width: fit-content;
+    padding: 0rem 1.5rem;
+    cursor: pointer;
+
+}
+
+.navbar img {
+    cursor: pointer;
+    margin: 0;
+    height: 15px;
+    padding: 15px;
+}
+.navbar-items:hover{
+    filter: brightness(50);
+}
+.navbar img:hover{
+    filter: brightness(100);
+}
+
+.discount a {
+    text-decoration: none;
+}
+
+.discount {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    text-align: center;
+    font-size: 3.7rem;
+    margin: 4rem 0rem 0rem 0rem;
+    padding: 0;
+}
+
+.main-text {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    font-size: 2.0rem;
+}
+
+.learn-more {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0rem;
+    text-decoration: none;
+}
+
+#myVideo {
+    width: 98vw;
+    height: 55vh;
+}
+
+.iphone14 {
+    background-color: black;
+    position: relative;
+    text-align: center;
+
+}
+
+.iphone14 img {
+    z-index: -1;
+    width: 78vw;
+    height: 90vh;
+    /* background-image:url("/hero__cj6i78tzkp8i_large.jpg") */
+}
+
+.iphone14-text {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.advert {
+    display: block;
+    /* width: 40vw; */
+    /* height: 70vh; */
+    width: 35vw;
+    margin: 2rem;
+    border-radius: 10px;
+    margin: auto;
+    /* background-color: #A8A8A8; */
+}
+
+.advertisement {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    row-gap: 1rem;
+    /* column-gap: 1rem; */
+    background-color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .advertisement {
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .advert {
+
+        width: 90vw;
+        margin: 2rem;
+        border-radius: 10px;
+        /* background-color: #A8A8A8; */
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .iphone14 img {
+        width: 88vw;
+        height: 60vh;
+        /* background-image:url("/hero__cj6i78tzkp8i_large.jpg") */
+    }
+}
+
+.movies {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    overflow: hidden;
+    /* display: flex; */
+}
+
+.movie {
+    width: 98vw;
+    height: 60vh;
+    margin: 3rem;
+    border-radius: 100px;
+    border: 2px solid white;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-98vw, 0, 0);
+        /* The image width */
+    }
+}
+
+.info {
+    color: #A8A8A8;
+    display: block;
+    width: 70vw;
+    font-size: 0.8rem;
+}
+
+.down {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+
+}
+.overview{
+    width: 98vw;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    /* vertical-align: center; */
+
+    margin: auto;
+}
+.overview div{
+  display:block;
+  margin:auto;
+}
+footer{
+    padding: 2rem;
+    background-color: #A8A8A8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow-x: scroll; */
+
+}
+.ele {
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 10; */
+}
+.ele div{
+    width: fit-content;
+    padding: 1rem;
+}
+.elee{
+    display:block;
+    margin: auto;
+}
+@media only screen and (max-width:600px) {
+
+    .overview {display: grid;
+        grid-template-columns: 1fr;
+        
+        /* background-image:url("/hero__cj6i78tzkp8i_large.jpg") */
+    }
+    #ie1{
+        display: none;
+
+    }
+    #ie2{
+        display: none;
+    }
+    footer{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .ele{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .movie {
+        width: 78vw;
+        height: 40vh;
+        margin: 1rem;
+        border-radius: 100px;
+        border: 2px solid white;
+        animation: slide 12s linear infinite;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-1400px, 0, 0);
+            /* The image width */
+        }
+    }
+}
